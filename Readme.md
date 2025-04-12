@@ -29,7 +29,7 @@ cd note-taking-app
 Make sure you have Composer installed and then install all the project's dependencies:
 
 ```bash
-composer install
+composer install -n
 ```
 
 ### Step 3: Configure the Environment
@@ -43,7 +43,7 @@ In theory, you shouldn't need to change anything, just make sure the connection 
 Since our application requires persistence, we'll need to create the tables by running the following commands:
 
 ```bash
-php bin/console doctrine:migrations:migrate
+php bin/console doctrine:migrations:migrate --no-interaction
 ```
 
 ### Step 5: Start the Web Server
@@ -59,11 +59,7 @@ The application will be available at `http://localhost:8000/note/`.
 
 ### Step 6: Stop the Web Server
 
-When you're done, you can stop the Symfony web server with the following command:
-
-```bash
-symfony server:stop
-```
+When you're done, you can stop Symfony by pressing Ctrl + C to stop the Symfony web server.
 
 ---
 

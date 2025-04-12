@@ -8,7 +8,7 @@ Before you begin, make sure you have the following requirements installed on you
 
 - **PHP** >= 8.2
 - **PDO-SQLite PHP extension enabled**
-- **Usual Symfony application requirements.**
+- **[Usual Symfony application requirements](https://symfony.com/doc/current/setup.html#technical-requirements).**
   - **Symfony** >= 5.x
   - **Composer**
   - **Install Symfony CLI**
